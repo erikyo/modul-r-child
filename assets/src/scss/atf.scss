@@ -1,0 +1,48 @@
+/* MODUL R Style */
+
+/* Utils */
+// @import "../../../../Modul-R/assets/src/scss/utils/normalize";
+@import "../../../../Modul-R/assets/src/scss/utils/vars";
+// import your costomizations
+@import "utils/customizations";
+@import "../../../../Modul-R/assets/src/scss/utils/media-queries";
+
+/* Base style */
+@import "../../../../Modul-R/assets/src/scss/main/base";
+// @import "../../../../Modul-R/assets/src/scss/main/fonts";
+// @import "../../../../Modul-R/assets/src/scss/main/typography";
+// @import "../../../../Modul-R/assets/src/scss/main/helpers";
+// @import "../../../../Modul-R/assets/src/scss/main/inputs";
+// @import "../../../../Modul-R/assets/src/scss/main/images";
+// @import "../../../../Modul-R/assets/src/scss/main/buttons";
+
+/* Components */
+@import "../../../../Modul-R/assets/src/scss/components/header";
+@import "../../../../Modul-R/assets/src/scss/components/navigation";
+// @import "../../../../Modul-R/assets/src/scss/components/hamburger";
+@import "../../../../Modul-R/assets/src/scss/components/content";
+// @import "../../../../Modul-R/assets/src/scss/components/extras";
+// @import "../../../../Modul-R/assets/src/scss/components/blocks";
+// @import "../../../../Modul-R/assets/src/scss/components/footer";
+// @import "../../../../Modul-R/assets/src/scss/components/animations";
+// @import "../../../../Modul-R/assets/src/scss/components/comments";
+// @import "../../../../Modul-R/assets/src/scss/components/search-form";
+// @import "../../../../Modul-R/assets/src/scss/components/cookie";
+
+/* Pages */
+@import "../../../../Modul-R/assets/src/scss/pages/homepage";
+@import "pages/homepage";
+// @import "../../../../Modul-R/assets/src/scss/pages/page";
+// @import "../../../../Modul-R/assets/src/scss/pages/single";
+// @import "../../../../Modul-R/assets/src/scss/pages/archive";
+
+/* Vendor Style */
+// @import "../../../../Modul-R/assets/src/scss/vendor/fancybox";
+// @import "../../../../Modul-R/assets/src/scss/vendor/slick";
+// @import "../../../../Modul-R/assets/src/scss/vendor/masonry";
+
+/* Icons & extras */
+// @import "../../../../Modul-R/assets/src/scss/utils/icons";
+// @import "../../../../Modul-R/assets/src/scss/main/typography-extras";
+// @import "../../../../Modul-R/assets/src/scss/main/scrollbar";
+// @import "../../../../Modul-R/assets/src/scss/utils/print";

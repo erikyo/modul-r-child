@@ -102,13 +102,13 @@ function clean() {
 // Minify images
 function imageMinify() {
   return gulp
-  .src(opts.devPath + 'img/**')
-  .pipe(newer(opts.distPath + 'img/'))
-  .pipe(
-    imagemin(opts.imagemin.settings)
-    .on('error', notify.onError('Error: <%= error.message %>,title: "Imagemin Error"'))
-  )
-  .pipe(gulp.dest(opts.distPath + 'img/'));
+    .src(opts.devPath + 'img/**')
+    .pipe(newer(opts.distPath + 'img/'))
+    .pipe(
+      imagemin(opts.imagemin.settings)
+        .on('error', notify.onError('Error: <%= error.message %>,title: "Imagemin Error"'))
+    )
+    .pipe(gulp.dest(opts.distPath + 'img/'));
 }
 
 // Wordpress pot translation file
@@ -157,9 +157,21 @@ function vendorScript() {
 
 // CSS Style functions
 // compile style.scss (the main wordpress style)
+function cssAtf() {
+  return gulp
+    .src(opts.devPath + 'scss/atf.scss')
+    .pipe(sass(opts.sass.dev))
+    .on('error', notify.onError('Error: <%= error.message %>,title: "SASS Error"'))
+    .pipe(postcss([
+      autoprefixer(opts.autoprefixer.build),
+      cssnano(opts.cssnano)
+    ]))
+    .pipe(gulp.dest(opts.distPath + 'css/'));
+}
+
 function mainCSS() {
   return gulp
-    .src(opts.devPath + 'scss/*.scss')
+    .src(opts.devPath + 'scss/style.scss')
     .pipe(sourcemaps.init())
     .pipe(sass(opts.sass.dev))
     .on('error', notify.onError('Error: <%= error.message %>,title: "SASS Error"'))
@@ -174,7 +186,7 @@ function mainCSS() {
 
 function buildMainCSS() {
   return gulp
-    .src(opts.devPath + 'scss/*.scss')
+    .src(opts.devPath + 'scss/style.scss')
     .pipe(sass(opts.sass.build))
     .on('error', notify.onError('Error: <%= error.message %>,title: "SASS Error"'))
     .pipe(gulp.dest(opts.rootPath))
@@ -191,7 +203,7 @@ function buildMainCSS() {
 
 // Watch files
 function watchStyle() {
-  gulp.watch(opts.devPath + 'scss/**/*.scss', style );
+  gulp.watch([opts.devPath + 'scss/**/*.scss', '../Modul-R/assets/src/scss/**/*.scss'], style );
 }
 
 function watchCode() {
@@ -203,9 +215,9 @@ function watchImages() {
 }
 
 
-const style = gulp.parallel(mainCSS);
+const style = gulp.parallel(mainCSS, cssAtf);
 const scripts = gulp.parallel(vendorScript, userScript, mainScript);
-const BuildAll = gulp.series(clean, gulp.parallel( imageMinify, createPot, buildMainCSS, scripts ));
+const BuildAll = gulp.series(clean, gulp.parallel( imageMinify, createPot, buildMainCSS, scripts, cssAtf));
 const watch = gulp.parallel(watchStyle, watchCode, watchImages);
 
 
@@ -220,6 +232,7 @@ exports.vendorScript = vendorScript;
 exports.userScript = userScript;
 
 exports.style = style;
+exports.cssAtf = cssAtf;
 exports.mainCSS = mainCSS;
 exports.buildMainCSS = buildMainCSS;
 

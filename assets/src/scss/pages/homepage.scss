@@ -1,0 +1,14 @@
+body.home {
+  .entry-content {
+      & > .wp-block-columns {
+        
+        text-align: center;
+        
+        img {
+          width: 75%;
+          margin: auto;
+          height: 200px;
+        }
+      }
+  }
+}
