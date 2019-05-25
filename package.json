@@ -8,11 +8,10 @@
   },
   "homepage": "https://modul-r.codekraft.it/",
   "wp": {
-    "themeName": "Modul R Child",
-    "description": "Modul R is a powerful and flexible theme that provides a fast way to create an awesome website.",
+    "themeName": "Modul-R child",
+    "description": "Modul R child template",
     "template": "Modul-R",
     "textDomain": "modul-r-child",
-    "tags": "portfolio, one-column, custom-background, custom-header, custom-menu, editor-style, featured-images, full-width-template, block-styles, wide-blocks",
     "licenseURI": "https://github.com/erikyo/modular-wordpress-theme/blob/master/LICENSE"
   },
   "license": "GPL-3.0",
