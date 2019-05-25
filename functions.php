@@ -13,9 +13,8 @@ add_action( 'after_setup_theme', 'moduchild_theme_setup' );
 
 add_action( 'wp_enqueue_scripts', 'enqueue_parent_theme_style' );
 function enqueue_parent_theme_style() {
-	wp_enqueue_style( 'parent-style', get_template_directory_uri().'/style.css' );
+	wp_enqueue_style( 'modul-r', get_template_directory_uri().'/style.css' );
 }
-
 
 
 /**

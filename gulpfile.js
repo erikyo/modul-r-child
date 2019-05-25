@@ -74,17 +74,11 @@ const opts = {
     '/*!' ,
     'Theme Name: <%= wp.themeName %>\n' +
     'Description: <%= wp.description %>\n' +
-    'Template: <%= wp.template %>\n' +
     'Theme URI: <%= homepage %>\n' +
     'Author: <%= author.name %> \n' +
     'Author URI: <%= author.website %> \n' +
-    'Requires at least: WordPress 4.9.6\n' +
-    'Version: <%= version %>\n' +
-    'License: GNU General Public License v3 or later\n' +
-    'License: © <%= new Date().getFullYear() %> <%= author.name %>\n' +
-    'License URI: <%= wp.licenseURI %>\n' +
     'Text Domain: <%= wp.textDomain %>\n' +
-    'Tags: <%= wp.tags %>\n' +
+    'Template: <%= wp.template %>\n' +
     '*/\n\n'
   ].join('\n')
 };

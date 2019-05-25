@@ -1,6 +1,6 @@
 {
   "name": "modul-r-child",
-  "version": "1.0.4",
+  "version": "1.0.6",
   "main": "Codekraft",
   "author": {
     "name": "Codekraft Studio - info@codekraft.it",
@@ -10,7 +10,7 @@
   "wp": {
     "themeName": "Modul R Child",
     "description": "Modul R is a powerful and flexible theme that provides a fast way to create an awesome website.",
-    "template": "modul-r",
+    "template": "Modul-R",
     "textDomain": "modul-r-child",
     "tags": "portfolio, one-column, custom-background, custom-header, custom-menu, editor-style, featured-images, full-width-template, block-styles, wide-blocks",
     "licenseURI": "https://github.com/erikyo/modular-wordpress-theme/blob/master/LICENSE"
