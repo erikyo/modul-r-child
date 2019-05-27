@@ -74,6 +74,7 @@ const opts = {
     '/*!' ,
     'Theme Name: <%= wp.themeName %>\n' +
     'Description: <%= wp.description %>\n' +
+    'Version: <%= version %>\n' +
     'Theme URI: <%= homepage %>\n' +
     'Author: <%= author.name %> \n' +
     'Author URI: <%= author.website %> \n' +

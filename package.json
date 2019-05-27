@@ -1,6 +1,6 @@
 {
   "name": "modul-r-child",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "main": "Codekraft",
   "author": {
     "name": "Codekraft Studio - info@codekraft.it",
@@ -10,9 +10,14 @@
   "wp": {
     "themeName": "Modul-R child",
     "description": "Modul R child template",
-    "template": "Modul-R",
+    "template": "modul-r",
     "textDomain": "modul-r-child",
     "licenseURI": "https://github.com/erikyo/modular-wordpress-theme/blob/master/LICENSE"
+  },
+  "scripts": {
+    "watch": "node node_modules/gulp/bin/gulp watch",
+    "build": "node node_modules/gulp/bin/gulp BuildAll",
+    "postinstall": "node node_modules/gulp/bin/gulp BuildAll"
   },
   "license": "GPL-3.0",
   "style": "./style.css",
