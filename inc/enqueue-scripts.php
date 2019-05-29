@@ -10,11 +10,10 @@ add_action( 'after_setup_theme', 'moduchild_theme_setup' );
 
 
 /**
- * Set up Modul R Child Theme's textdomain.
+ * Set up Modul R Child Theme's style.
  */
-add_action( 'wp_enqueue_scripts', 'enqueue_parent_theme_style' );
-function enqueue_parent_theme_style() {
-	wp_enqueue_style( 'theme-style', get_template_directory_uri() . '/style.css' );
+add_action( 'wp_enqueue_scripts', 'enqueue_child_theme_style' );
+function enqueue_child_theme_style() {
 	wp_enqueue_style( 'modul-r-child', get_stylesheet_uri() );
 }
 
