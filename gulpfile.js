@@ -70,18 +70,19 @@ const opts = {
   },
 
   banner: [
-    '@charset "UTF-8";\n' +
+    '@charset "UTF-8"; ' ,
     '/*!' ,
-    'Theme Name: <%= wp.themeName %>\n' +
-    'Description: <%= wp.description %>\n' +
-    'Version: <%= version %>\n' +
-    'Theme URI: <%= homepage %>\n' +
-    'Author: <%= author.name %> \n' +
-    'Author URI: <%= author.website %> \n' +
-    'Text Domain: <%= wp.textDomain %>\n' +
-    'Template: <%= wp.template %>\n' +
-    '*/\n\n'
-  ].join('\n')
+    'Theme Name: <%= wp.themeName %> ' ,
+    'Description: <%= wp.description %> ' ,
+    'Version: <%= version %> ' ,
+    'Theme URI: <%= homepage %> ' ,
+    'Author: <%= author.name %> ' ,
+    'Author URI: <%= author.website %> ' ,
+    'Text Domain: <%= wp.textDomain %> ' ,
+    'Template: <%= wp.template %> ' ,
+    '*/',
+    ''
+  ].join('\r\n')
 };
 
 // ----------------------------
