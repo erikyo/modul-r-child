@@ -22,9 +22,13 @@ function enqueue_child_theme_style() {
 /**
  * load the cookie policy banner
  */
-function moduchild_scripts() {
+function modu_theme_scripts() {
 
 	// Register and Enqueue
+	wp_enqueue_script( 'jquery' );
+	wp_register_script( 'scripts-vendors', get_template_directory_uri() . "/assets/dist/js/vendor-scripts.js" , array('jquery'), null, true );
+	wp_enqueue_script( 'scripts-vendors' );
+
 	wp_register_script( 'scripts', get_stylesheet_directory_uri() . "/assets/dist/js/scripts.js" , null, null, true );
 	wp_enqueue_script( 'scripts' );
 

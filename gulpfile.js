@@ -135,7 +135,10 @@ function mainScript() {
 // User Scripts
 function userScript() {
   return gulp
-    .src(opts.devPath + 'js/user/*.js')
+    .src([
+      '../Modul-R/assets/src/js/user/!masonry*.js',
+      opts.devPath + 'js/user/*.js',
+    ], {base: '.'})
     .pipe(sourcemaps.init())
     .pipe(babel({
       presets: ['@babel/env']

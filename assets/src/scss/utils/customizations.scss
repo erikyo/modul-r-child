@@ -1,5 +1,5 @@
-$color__primary: #0077be;
-$color__secondary: #04468e;
+$color__primary: #00bcd4;
+$color__secondary: #FF5722;
 $color__black: #44474e;
 $color__dark-grey: lighten($color__black, 10%);
 $color__light-grey: #e3e3e3;
@@ -18,6 +18,5 @@ $hamburger__color: $color__white;
 $scrollbar-line-color: $color__primary;
 $scrollbar-background-color: $color__light-grey;
 
-
 $size__branding-height: 104px;
-$size__branding-logo-ratio: $size__branding-height *.8;
+$size__branding-logo-ratio: $size__branding-height *.3;
