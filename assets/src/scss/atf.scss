@@ -2,9 +2,7 @@
 
 /* Utils */
 // @import "../../../../Modul-R/assets/src/scss/utils/normalize";
-@import "../../../../Modul-R/assets/src/scss/utils/vars";
-// import your costomizations
-@import "utils/customizations";
+@import "utils/vars";
 @import "../../../../Modul-R/assets/src/scss/utils/media-queries";
 
 /* Base style */
@@ -21,6 +19,7 @@
 @import "../../../../Modul-R/assets/src/scss/components/navigation";
 // @import "../../../../Modul-R/assets/src/scss/components/hamburger";
 @import "../../../../Modul-R/assets/src/scss/components/content";
+// @import "../../../../modul-r/assets/src/scss/components/content-header";
 // @import "../../../../Modul-R/assets/src/scss/components/extras";
 // @import "../../../../Modul-R/assets/src/scss/components/blocks";
 // @import "../../../../Modul-R/assets/src/scss/components/footer";

@@ -4,9 +4,10 @@ const gulp = require('gulp');
 // Utilities
 const sass = require('gulp-sass');
 const sourcemaps = require('gulp-sourcemaps');
-const cssnano = require('cssnano');
 const postcss = require('gulp-postcss');
+const cssnano = require('cssnano');
 const autoprefixer = require("autoprefixer");
+const cssvariables = require('postcss-css-variables');
 const fs = require('fs');
 const newer = require('gulp-newer');
 const imagemin = require('gulp-imagemin');
@@ -43,6 +44,11 @@ const opts = {
   },
 
   cssnano: {reduceIdents: {keyframes: false}},
+
+  cssvariables: {
+    preserve : true,
+    preserveInjectedVariables: true
+  },
 
   sass: {
     dev: {
@@ -136,7 +142,8 @@ function mainScript() {
 function userScript() {
   return gulp
     .src([
-      '../Modul-R/assets/src/js/user/!masonry*.js',
+      '../modul-r/assets/src/js/user/*.js',
+      '!../modul-r/assets/src/js/user/masonry.js',
       opts.devPath + 'js/user/*.js',
     ], {base: '.'})
     .pipe(sourcemaps.init())
@@ -168,6 +175,7 @@ function cssAtf() {
     .pipe(sass(opts.sass.dev))
     .on('error', notify.onError('Error: <%= error.message %>,title: "SASS Error"'))
     .pipe(postcss([
+      cssvariables(opts.cssvariables),
       autoprefixer(opts.autoprefixer.build),
       cssnano(opts.cssnano)
     ]))
@@ -181,6 +189,7 @@ function mainCSS() {
     .pipe(sass(opts.sass.dev))
     .on('error', notify.onError('Error: <%= error.message %>,title: "SASS Error"'))
     .pipe(postcss([
+      cssvariables(opts.cssvariables),
       autoprefixer(opts.autoprefixer.dev)
     ]))
     .pipe(header(opts.banner, pkg))
@@ -196,6 +205,7 @@ function buildMainCSS() {
     .on('error', notify.onError('Error: <%= error.message %>,title: "SASS Error"'))
     .pipe(gulp.dest(opts.rootPath))
     .pipe(postcss([
+      cssvariables(opts.cssvariables),
       autoprefixer(opts.autoprefixer.build),
       cssnano(opts.cssnano)
     ]))
@@ -208,7 +218,7 @@ function buildMainCSS() {
 
 // Watch files
 function watchStyle() {
-  gulp.watch([opts.devPath + 'scss/**/*.scss', '../Modul-R/assets/src/scss/**/*.scss'], style );
+  gulp.watch([opts.devPath + 'scss/**/*.scss', '../modul-r/assets/src/scss/**/*.scss'], style );
 }
 
 function watchCode() {

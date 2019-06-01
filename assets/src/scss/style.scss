@@ -2,11 +2,10 @@
 
 /* Utils */
 @import "../../../../modul-r/assets/src/scss/utils/normalize";
-@import "../../../../modul-r/assets/src/scss/utils/vars";
+@import "utils/vars";
 @import "../../../../modul-r/assets/src/scss/utils/media-queries";
 
-/* Child theme customizations */
-@import "utils/customizations";
+
 
 /* Base style */
 // @import "../../../../modul-r/assets/src/scss//base";
@@ -23,6 +22,7 @@
 // @import "../../../../modul-r/assets/src/scss/components/navigation";
 @import "../../../../modul-r/assets/src/scss/components/hamburger";
 @import "../../../../modul-r/assets/src/scss/components/content";
+@import "../../../../modul-r/assets/src/scss/components/content-header";
 @import "../../../../modul-r/assets/src/scss/components/extras";
 @import "../../../../modul-r/assets/src/scss/components/blocks";
 @import "../../../../modul-r/assets/src/scss/components/footer";
