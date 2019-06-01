@@ -49,12 +49,7 @@ const opts = {
   },
 
   sass: {
-    dev: {
-      outputStyle: 'nested'
-    },
-    build: {
-      outputStyle: 'compressed'
-    }
+    outputStyle: 'nested'
   },
 
   imagemin: {
@@ -98,7 +93,7 @@ function clean() {
   return del([
     '**/Thumbs.db',
     '**/.DS_Store',
-    opts.rootPath + '*.css.map',
+    opts.rootPath + '**/*.map',
     opts.distPath + '**'
   ]).then( paths => {
     console.log('Successfully deleted files and folders:\n', paths.join('\n'));
