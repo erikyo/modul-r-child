@@ -19,9 +19,7 @@ const wpPot = require('gulp-wp-pot');
 // Gulp plugins
 const header = require('gulp-header');
 const del = require("del");
-const rename = require('gulp-rename');
 const notify = require("gulp-notify");
-const zip = require('gulp-zip');
 
 // Misc/global vars
 const pkg = JSON.parse(fs.readFileSync('./package.json'));
@@ -172,7 +170,7 @@ function vendorScript() {
 function cssAtf() {
   return gulp
     .src(opts.devPath + 'scss/atf.scss')
-    .pipe(sass(opts.sass.dev))
+    .pipe(sass(opts.sass))
     .on('error', notify.onError('Error: <%= error.message %>,title: "SASS Error"'))
     .pipe(postcss([
       cssvariables(opts.cssvariables),
@@ -186,7 +184,7 @@ function mainCSS() {
   return gulp
     .src(opts.devPath + 'scss/style.scss')
     .pipe(sourcemaps.init())
-    .pipe(sass(opts.sass.dev))
+    .pipe(sass(opts.sass))
     .on('error', notify.onError('Error: <%= error.message %>,title: "SASS Error"'))
     .pipe(postcss([
       cssvariables(opts.cssvariables),
@@ -201,7 +199,7 @@ function mainCSS() {
 function buildMainCSS() {
   return gulp
     .src(opts.devPath + 'scss/style.scss')
-    .pipe(sass(opts.sass.build))
+    .pipe(sass(opts.sass))
     .on('error', notify.onError('Error: <%= error.message %>,title: "SASS Error"'))
     .pipe(gulp.dest(opts.rootPath))
     .pipe(postcss([
