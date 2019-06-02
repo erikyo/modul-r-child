@@ -8,18 +8,7 @@ $color__white: #fff;
 $color__text: $color__dark-grey;
 $color__nav-background: $color__primary;
 $color__background: darken($color__white, 1%);
-
-:root {
-  --color-primary: #{$color__primary};
-  --color-secondary: #{$color__secondary};
-  --color-black: #{$color__black};
-  --color-dark-grey: #{$color__dark-grey};
-  --color-light-grey: #{$color__light-grey};
-  --color-white: #{$color__white};
-  --color-text: #{$color__text};
-  --color-text-light: #{lighten($color__text, 15%)};
-  --color-accent: var(--color-secondary);
-}
+$color__accent: $color__secondary;
 
 // TEXT VARIABLES
 $text__line-height: 1.7;

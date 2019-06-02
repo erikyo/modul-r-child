@@ -7,7 +7,6 @@ const sourcemaps = require('gulp-sourcemaps');
 const postcss = require('gulp-postcss');
 const cssnano = require('cssnano');
 const autoprefixer = require("autoprefixer");
-const cssvariables = require('postcss-css-variables');
 const fs = require('fs');
 const newer = require('gulp-newer');
 const imagemin = require('gulp-imagemin');
@@ -168,7 +167,6 @@ function cssAtf() {
     .pipe(sass(opts.sass))
     .on('error', notify.onError('Error: <%= error.message %>,title: "SASS Error"'))
     .pipe(postcss([
-      cssvariables(opts.cssvariables),
       autoprefixer(opts.autoprefixer.build),
       cssnano(opts.cssnano)
     ]))
@@ -182,7 +180,6 @@ function mainCSS() {
     .pipe(sass(opts.sass))
     .on('error', notify.onError('Error: <%= error.message %>,title: "SASS Error"'))
     .pipe(postcss([
-      cssvariables(opts.cssvariables),
       autoprefixer(opts.autoprefixer.dev)
     ]))
     .pipe(header(opts.banner, pkg))
@@ -198,7 +195,6 @@ function buildMainCSS() {
     .on('error', notify.onError('Error: <%= error.message %>,title: "SASS Error"'))
     .pipe(gulp.dest(opts.rootPath))
     .pipe(postcss([
-      cssvariables(opts.cssvariables),
       autoprefixer(opts.autoprefixer.build),
       cssnano(opts.cssnano)
     ]))
