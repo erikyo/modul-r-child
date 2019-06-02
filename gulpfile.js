@@ -92,7 +92,8 @@ function clean() {
   return del([
     '**/Thumbs.db',
     '**/.DS_Store',
-    opts.rootPath + '**/*.map',
+    opts.rootPath + '*.css.map',
+    opts.rootPath + 'assets/**/*.map',
     opts.distPath + '**'
   ]).then( paths => {
     console.log('Successfully deleted files and folders:\n', paths.join('\n'));
