@@ -30,14 +30,7 @@ const opts = {
   distPath: './assets/dist/',
 
   autoprefixer: {
-    dev: {
-      browsers: ['last 1 versions'],
-      cascade: false
-    },
-    build: {
-      browsers: ['> 1%', 'last 2 versions'],
-      cascade: false
-    }
+    cascade: false
   },
 
   cssnano: {reduceIdents: {keyframes: false}},
@@ -174,6 +167,17 @@ function cssAtf() {
     .pipe(gulp.dest(opts.distPath + 'css/'));
 }
 
+function editorCSS() {
+  return gulp
+    .src(opts.devPath + 'scss/editor.scss')
+    .pipe(sass(opts.sass))
+    .on('error', notify.onError('Error: <%= error.message %>,title: "SASS Error"'))
+    .pipe(postcss([
+      autoprefixer(opts.autoprefixer.dev)
+    ]))
+    .pipe(gulp.dest(opts.rootPath));
+}
+
 function mainCSS() {
   return gulp
     .src(opts.devPath + 'scss/style.scss')
@@ -220,9 +224,9 @@ function watchImages() {
 }
 
 
-const style = gulp.parallel(mainCSS, cssAtf);
+const style = gulp.parallel(mainCSS, cssAtf, editorCSS);
 const scripts = gulp.parallel(vendorScript, userScript, mainScript);
-const BuildAll = gulp.series(clean, gulp.parallel( imageMinify, createPot, buildMainCSS, scripts, cssAtf));
+const BuildAll = gulp.series(clean, gulp.parallel( imageMinify, createPot, buildMainCSS, cssAtf, editorCSS, scripts));
 const watch = gulp.parallel(watchStyle, watchCode, watchImages);
 
 
@@ -238,6 +242,7 @@ exports.userScript = userScript;
 
 exports.style = style;
 exports.cssAtf = cssAtf;
+exports.editorCSS = editorCSS;
 exports.mainCSS = mainCSS;
 exports.buildMainCSS = buildMainCSS;
 

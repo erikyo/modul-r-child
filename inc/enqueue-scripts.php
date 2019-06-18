@@ -10,7 +10,6 @@ add_action( 'after_setup_theme', 'moduchild_theme_setup' );
 
 
 
-
 /**
  * load the cookie policy banner
  */
@@ -21,7 +20,7 @@ function modu_theme_scripts() {
 	wp_register_script( 'scripts-vendors', get_template_directory_uri() . "/assets/dist/js/vendor-scripts.js" , array('jquery'), null, true );
 	wp_enqueue_script( 'scripts-vendors' );
 
-	wp_register_script( 'scripts', get_stylesheet_directory_uri() . "/assets/dist/js/scripts.js" , null, null, true );
+	wp_register_script( 'scripts', get_stylesheet_directory_uri() . "/assets/dist/js/scripts.js" , array('scripts-vendor'), null, true );
 	wp_enqueue_script( 'scripts' );
 
 	$cookie_args = array(

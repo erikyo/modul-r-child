@@ -16,7 +16,7 @@ function modu_masonryScripts(){
 add_action('wp_enqueue_scripts', 'modu_masonryScripts');
 
 
-function modu_cateogry_query( $query ) {
+function modu_category_query( $query ) {
 // do not alter the query on wp-admin pages and only alter it if it's the main query
 	if (!is_admin() && $query->is_main_query()){
 
@@ -27,4 +27,4 @@ function modu_cateogry_query( $query ) {
 
 	}
 }
-add_action( 'pre_get_posts', 'modu_cateogry_query' );
+add_action( 'pre_get_posts', 'modu_category_query' );

@@ -7,7 +7,7 @@
 
 
 /* Base style */
-// @import "../../../../modul-r/assets/src/scss//base";
+// @import "../../../../modul-r/assets/src/scss/main/base";
 @import "../../../../modul-r/assets/src/scss/main/fonts";
 @import "../../../../modul-r/assets/src/scss/main/typography";
 @import "../../../../modul-r/assets/src/scss/main/helpers";
@@ -37,11 +37,7 @@
 @import "../../../../modul-r/assets/src/scss/pages/single";
 @import "../../../../modul-r/assets/src/scss/pages/archive";
 @import "../../../../modul-r/assets/src/scss/pages/author";
-
-/* WooCommerce */
-@import "../../../../modul-r/assets/src/scss/woo/woo-base";
-@import "../../../../modul-r/assets/src/scss/woo/woo-pages";
-@import "../../../../modul-r/assets/src/scss/woo/woo-sidebar";
+@import "../../../../modul-r/assets/src/scss/woocommerce/main";
 
 /* Vendor Style */
 @import "../../../../modul-r/assets/src/scss/vendor/fancybox";
