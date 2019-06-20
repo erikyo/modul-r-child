@@ -5,7 +5,7 @@
  */
 
 // A category load the masonry scripts
-function modu_masonryScripts(){
+function modul_r_masonryScripts(){
 
 	// customize with your category which will displayed with the masonry layout
 	if(is_category()){
@@ -13,10 +13,10 @@ function modu_masonryScripts(){
 		wp_enqueue_script( 'masonry4', '//unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js' , array('imagesloaded',), null, true );
 	}
 }
-add_action('wp_enqueue_scripts', 'modu_masonryScripts');
+add_action('wp_enqueue_scripts', 'modul_r_masonryScripts');
 
 
-function modu_category_query( $query ) {
+function modul_r_category_query( $query ) {
 // do not alter the query on wp-admin pages and only alter it if it's the main query
 	if (!is_admin() && $query->is_main_query()){
 
@@ -27,4 +27,4 @@ function modu_category_query( $query ) {
 
 	}
 }
-add_action( 'pre_get_posts', 'modu_category_query' );
+add_action( 'pre_get_posts', 'modul_r_category_query' );

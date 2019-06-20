@@ -13,7 +13,7 @@ add_action( 'after_setup_theme', 'moduchild_theme_setup' );
 /**
  * load the cookie policy banner
  */
-function modu_theme_scripts() {
+function modul_r_theme_scripts() {
 
 	// Register and Enqueue
 	wp_enqueue_script( 'jquery' );
@@ -31,4 +31,4 @@ function modu_theme_scripts() {
 	wp_localize_script( 'scripts', 'args', $cookie_args );
 }
 
-add_action( 'wp_enqueue_scripts', 'moduchild_scripts' );
+add_action( 'wp_enqueue_scripts', 'modul_r_theme_scripts' );
