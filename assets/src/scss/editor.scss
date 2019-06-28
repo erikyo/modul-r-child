@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+@import "utils/vars";
+@import "../../../../Modul-R/assets/src/scss/utils/media-queries";
+
+@import "../../../../Modul-R/assets/src/scss/main/base";
+@import "../../../../Modul-R/assets/src/scss/main/fonts";
+@import "../../../../Modul-R/assets/src/scss/main/typography";
+
+.wp-block.editor-post-title__block .editor-post-title__input{
+  @extend %headline_style;
+}
+
+.editor-styles-wrapper {
+  li, p {@extend li, p;}
+}
