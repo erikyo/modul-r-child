@@ -9,6 +9,7 @@ $color__text: $color__dark-grey;
 $color__nav-background: $color__primary;
 $color__background: darken($color__white, 1%);
 $color__accent: $color__secondary;
+$color__woo-accent: $color__secondary;
 
 // TEXT VARIABLES
 $text__line-height: 1.7;
@@ -21,31 +22,34 @@ $font__family-headline: 'Montserrat', serif;
 $animations__lenght : .35s;
 
 // MEASURES
-$size__site-width: 1400px;
-$size__side-padding: 300px;
+$size__site-width: 1200px;
+$size__side-padding: 100px;
 
 // DISTANCES
 $size__margin: 8px;
 $size__padding: 64px;
-$size__padding-resp: 24px;
+$size__padding-resp: 20px;
 
 // HEADER
 $head__direction: row; // row or column
 $size__branding-height: 68px;
 $nav__height: 48px;
-$size__branding-logo-ratio: $size__branding-height *.3;
+$size__branding-logo-ratio: $size__branding-height *.45;
 
 // HEADER RESP
-$head__height-responsive: 48px;
+$head__height-responsive: 60px;
 
 // HAMBURGER MENU
-$hamburger__size: 36px;
+$hamburger__size: 30px;
 $hamburger__weight: 3px;
-$hamburger__color: $color__secondary;
+$hamburger__color: #{$color__primary};
 
 // SCROLLBAR
-$scrollbar-line-color: $color__primary;
+$scrollbar-line-color: #{$color__primary};
 $scrollbar-background-color: $color__light-grey;
 
 // EXTRAS
 $blockquote__icon-size: 60px;
+
+// My customization
+$head__direction: column;
