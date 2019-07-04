@@ -33,7 +33,23 @@ const opts = {
     cascade: false
   },
 
-  cssnano: {reduceIdents: {keyframes: false}},
+  cssnano: {
+    compressed: {
+      preset: ['default', {
+        reduceIdents: {
+          keyframes: false
+        }
+      }]
+    },
+    extended: {
+      preset: ['default', {
+        reduceIdents: {
+          keyframes: false
+        },
+        normalizeWhitespace: false
+      }]
+    }
+  },
 
   cssvariables: {
     preserve : true,
@@ -73,7 +89,7 @@ const opts = {
     'Template: <%= wp.template %> ' ,
     '*/',
     ''
-  ].join('\r\n')
+  ].join('\n')
 };
 
 // ----------------------------
@@ -162,7 +178,7 @@ function cssAtf() {
     .on('error', notify.onError('Error: <%= error.message %>,title: "SASS Error"'))
     .pipe(postcss([
       autoprefixer(opts.autoprefixer.build),
-      cssnano(opts.cssnano)
+      cssnano(opts.cssnano.compressed)
     ]))
     .pipe(gulp.dest(opts.distPath + 'css/'));
 }
@@ -175,7 +191,7 @@ function editorCSS() {
     .pipe(postcss([
       autoprefixer(opts.autoprefixer.dev)
     ]))
-    .pipe(gulp.dest(opts.rootPath));
+    .pipe(gulp.dest(opts.distPath + 'css/'));
 }
 
 function mainCSS() {
@@ -201,7 +217,7 @@ function buildMainCSS() {
     .pipe(gulp.dest(opts.rootPath))
     .pipe(postcss([
       autoprefixer(opts.autoprefixer.build),
-      cssnano(opts.cssnano)
+      cssnano(opts.cssnano.compressed)
     ]))
     .pipe(header(opts.banner, pkg))
     .pipe(gulp.dest(opts.rootPath));
@@ -212,11 +228,11 @@ function buildMainCSS() {
 
 // Watch files
 function watchStyle() {
-  gulp.watch([opts.devPath + 'scss/**/*.scss', '../modul-r/assets/src/scss/**/*.scss'], style );
+  gulp.watch([ opts.devPath + 'scss/**/*.scss', '../modul-r/assets/src/scss/**/*.scss' ], style );
 }
 
 function watchCode() {
-  gulp.watch(opts.devPath + 'js/**/*.js', scripts );
+  gulp.watch([ opts.devPath + 'js/**/*.js', '../modul-r/assets/src/js/**/*.js' ], scripts );
 }
 
 function watchImages() {
