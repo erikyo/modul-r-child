@@ -19,18 +19,33 @@ body {
   font-size: 17px;
   line-height: 1.7;
   word-break: break-word; }
+  @media (max-width: 500px) {
+    body {
+      font-size: 15px; } }
 
 iframe {
   width: 100%;
   max-width: 100%; }
 
 ::-moz-selection {
-  background-color: rgba(0, 188, 212, 0.5) !important;
+  background-color: rgba(0, 108, 212, 0.5) !important;
   color: white; }
 
 ::selection {
-  background-color: rgba(0, 188, 212, 0.5) !important;
+  background-color: rgba(0, 108, 212, 0.5) !important;
   color: white; }
+
+.primary-color {
+  color: #006cd4; }
+
+.primary-background {
+  background: #006cd4; }
+
+.secondary-color {
+  color: #e91e63; }
+
+.secondary-background {
+  background: #e91e63; }
 
 /* Headlines */
 h1,
@@ -52,14 +67,6 @@ h6 {
   margin: 16px 0 8px;
   padding: 0;
   line-height: 1.2; }
-  h1 a:hover,
-  h2 a:hover,
-  h3 a:hover,
-  h4 a:hover,
-  h5 a:hover,
-  h6 a:hover {
-    text-decoration: none;
-    color: #e91e63; }
 
 h1 {
   font-size: 42px; }
@@ -128,7 +135,7 @@ b, strong, a {
 
 b,
 strong {
-  color: #00bcd4; }
+  color: #006cd4; }
 
 a {
   color: #e91e63;

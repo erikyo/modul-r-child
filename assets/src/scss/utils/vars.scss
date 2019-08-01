@@ -1,4 +1,5 @@
-$color__primary: #00bcd4;
+// COLOR VARIABLES
+$color__primary: #006cd4;
 $color__secondary: #e91e63;
 $color__black: #44474e;
 $color__dark-grey: lighten($color__black, 10%);
@@ -6,6 +7,7 @@ $color__light-grey: #e3e3e3;
 $color__white: #fff;
 
 $color__text: $color__dark-grey;
+$color__text-light: lighten($color__dark-grey, 15%);
 $color__nav-background: $color__primary;
 $color__background: darken($color__white, 1%);
 $color__accent: $color__secondary;
@@ -43,6 +45,11 @@ $head__height-responsive: 60px;
 $hamburger__size: 30px;
 $hamburger__weight: 3px;
 $hamburger__color: #{$color__primary};
+
+// SIDEBAR
+$sidebar__position: right; // 'left' or 'right'
+$sidebar__width: 300px;
+$sidebar__margin: $size__padding;
 
 // SCROLLBAR
 $scrollbar-line-color: #{$color__primary};
