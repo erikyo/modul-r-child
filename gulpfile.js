@@ -84,7 +84,7 @@ const opts = {
     'Version: <%= version %> ' ,
     'Theme URI: <%= homepage %> ' ,
     'Author: <%= author.name %> ' ,
-    'Author URI: <%= author.website %> ' ,
+    // 'Author URI: <%= author.website %> ' ,
     'Text Domain: <%= wp.textDomain %> ' ,
     'Template: <%= wp.template %> ' ,
     '*/',
