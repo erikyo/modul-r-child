@@ -9,7 +9,7 @@ function modul_r_masonryScripts(){
 
 	// customize with your category which will displayed with the masonry layout
 	if(is_category()){
-		wp_enqueue_script( 'imagesloaded', 'https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js', array('jquery', 'vendors-scripts'), null, true );
+		wp_enqueue_script( 'imagesloaded', 'https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js', array('jquery', 'modul-r-vendors-scripts'), null, true );
 		wp_enqueue_script( 'masonry4', '//unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js' , array('imagesloaded',), null, true );
 	}
 }
