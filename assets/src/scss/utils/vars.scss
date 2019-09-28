@@ -1,6 +1,6 @@
 // COLOR VARIABLES
-$color__primary: #006cd4;
-$color__secondary: #e91e63;
+$color__primary: #e8bf1b;
+$color__secondary: #2a8e7e;
 $color__black: #44474e;
 $color__dark-grey: lighten($color__black, 10%);
 $color__light-grey: #e3e3e3;
@@ -33,10 +33,8 @@ $size__padding: 64px;
 $size__padding-resp: 20px;
 
 // HEADER
-$head__direction: row; // row or column
-$size__branding-height: 68px;
-$nav__height: 48px;
-$size__branding-logo-ratio: $size__branding-height *.45;
+$size__branding-height: 60px;
+$size__nav-height: 48px;
 
 // HEADER RESP
 $head__height-responsive: 60px;
@@ -47,7 +45,6 @@ $hamburger__weight: 3px;
 $hamburger__color: #{$color__primary};
 
 // SIDEBAR
-$sidebar__position: right; // 'left' or 'right'
 $sidebar__width: 300px;
 $sidebar__margin: $size__padding;
 
