@@ -16,8 +16,8 @@
   },
   "scripts": {
     "watch": "node node_modules/gulp/bin/gulp watch",
-    "build": "node node_modules/gulp/bin/gulp BuildAll",
-    "postinstall": "node node_modules/gulp/bin/gulp BuildAll"
+    "build": "node node_modules/gulp/bin/gulp Build",
+    "postinstall": "node node_modules/gulp/bin/gulp Build"
   },
   "license": "GPL-3.0",
   "style": "./style.css",

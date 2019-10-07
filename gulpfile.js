@@ -239,9 +239,9 @@ function watchImages() {
 }
 
 
-const style = gulp.parallel(mainCSS, CSS, cssAtf);
+const style = gulp.parallel(mainCSS, cssAtf, editorCSS);
 const scripts = gulp.parallel(vendorScript, userScript, mainScript);
-const build = gulp.series(clean, gulp.parallel( imageMinify, createPot, buildMainCSS, buildCSS, cssAtf, scripts ));
+const build = gulp.series(clean, gulp.parallel( imageMinify, createPot, buildMainCSS, cssAtf, editorCSS, scripts));
 const watch = gulp.parallel(watchStyle, watchCode, watchImages);
 
 
@@ -249,11 +249,9 @@ const watch = gulp.parallel(watchStyle, watchCode, watchImages);
 exports.default = build;
 exports.watch = watch;
 exports.build = build;
-exports.buildRelease = buildRelease;
 
 exports.style = style;
 exports.scripts = scripts;
 
 exports.createPot = createPot;
 exports.imageMinify = imageMinify;
-exports.zipRelease = zipRelease;
