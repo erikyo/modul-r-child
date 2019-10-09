@@ -84,7 +84,7 @@ const opts = {
     'Version: <%= version %> ' ,
     'Theme URI: <%= homepage %> ' ,
     'Author: <%= author.name %> ' ,
-    // 'Author URI: <%= author.website %> ' ,
+    'Author URI: <%= author.website %> ' ,
     'Text Domain: <%= wp.textDomain %> ' ,
     'Template: <%= wp.template %> ' ,
     '*/',
@@ -170,7 +170,6 @@ function vendorScript() {
 
 
 // CSS Style functions
-// compile style.scss (the main wordpress style)
 function cssAtf() {
   return gulp
     .src(opts.devPath + 'scss/atf.scss')
@@ -248,11 +247,11 @@ const watch = gulp.parallel(watchStyle, watchCode, watchImages);
 
 // exports
 exports.default = build;
-exports.build = build;
 exports.watch = watch;
+exports.build = build;
 
 exports.style = style;
 exports.scripts = scripts;
 
-exports.imageMinify = imageMinify;
 exports.createPot = createPot;
+exports.imageMinify = imageMinify;
