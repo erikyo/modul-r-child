@@ -4,10 +4,12 @@
 
 let accepted = false;
 
-
 function cookieAccepted() {
   accepted = true;
-  document.cookie = "cookiepolicy=accepted; expires=Mon, 28 Dec 2020 12:00:00 UTC; path=/";
+  var d = new Date();
+  d.setTime(d.getTime() + (365 * 5 * 24 * 60 * 60));
+  var expires = "expires=" + d.toUTCString();
+  document.cookie = "cookiepolicy=accepted;" + expires + "; path=/";
   let cookieDiv = document.getElementById('cookielaw');
   cookieDiv.classList.remove('active');
 
