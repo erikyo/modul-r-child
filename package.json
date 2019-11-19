@@ -16,22 +16,22 @@
   },
   "scripts": {
     "watch": "node node_modules/gulp/bin/gulp watch",
-    "build": "node node_modules/gulp/bin/gulp Build",
-    "postinstall": "node node_modules/gulp/bin/gulp Build"
+    "build": "node node_modules/gulp/bin/gulp build",
+    "postinstall": "node node_modules/gulp/bin/gulp build"
   },
   "license": "GPL-3.0",
   "style": "./style.css",
   "devDependencies": {
-    "@babel/core": "^7.4.5",
-    "@babel/preset-env": "^7.4.5",
-    "autoprefixer": "^9.5.1",
+    "@babel/core": "^7.7.2",
+    "@babel/preset-env": "^7.7.1",
+    "autoprefixer": "^9.7.1",
     "cssnano": "^4.1.10",
-    "del": "^4.1.1",
+    "del": "^5.1.0",
     "gulp": "^4.0.2",
     "gulp-babel": "^8.0.0",
     "gulp-concat": "^2.6.1",
-    "gulp-header": "^2.0.7",
-    "gulp-imagemin": "^6.0.0",
+    "gulp-header": "^2.0.9",
+    "gulp-imagemin": "^6.2.0",
     "gulp-newer": "^1.4.0",
     "gulp-notify": "^3.2.0",
     "gulp-postcss": "^8.0.0",
@@ -40,6 +40,6 @@
     "gulp-uglify": "^3.0.2",
     "gulp-watch": "^5.0.1",
     "gulp-wp-pot": "^2.3.5",
-    "gulp-zip": "^5.0.0"
+    "gulp-zip": "^5.0.1"
   }
 }
