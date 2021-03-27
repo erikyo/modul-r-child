@@ -1,0 +1,11 @@
+.page {
+  padding-left: $size__padding-resp * 2;
+  padding-right: $size__padding-resp * 2;
+  padding-bottom: $size__padding-resp;
+  
+  
+  @media #{$mq__responsive-size_brekpoint} {
+    padding-left: $size__padding-resp * .5;
+    padding-right: $size__padding-resp * .5;
+  }
+}
