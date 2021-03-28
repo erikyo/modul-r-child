@@ -32,8 +32,3 @@ function modul_r_theme_scripts() {
 	wp_localize_script( 'modul-r-scripts-main', 'args', $cookie_args );
 }
 add_action( 'wp_enqueue_scripts', 'modul_r_theme_scripts' );
-
-
-function modul_r_theme_fonts() {
-	wp_enqueue_style( 'modul-r-fonts', 'https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Material+Icons&display=swap', array(), null );
-}
