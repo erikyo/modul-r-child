@@ -126,11 +126,7 @@ p,
 b, strong, a {
   font-weight: 600; }
 
-p b, .editor-styles-wrapper li b, .editor-styles-wrapper p b {
-  color: #000000; }
-
 a {
-  color: #20221d;
   text-decoration: none; }
 
 ul, ol, dl {

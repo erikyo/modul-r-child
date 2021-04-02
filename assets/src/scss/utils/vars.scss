@@ -5,11 +5,13 @@ $color__black: #000000;
 $color__dark-grey: lighten($color__black, 10%);
 $color__light-grey: #f3f3f3;
 $color__white: #fff;
+
 // THEME CUSTOM COLORS
 $color__text: $color__dark-grey;
 $color__text-light: lighten($color__text, 15%);
 $color__nav-background: $color__white;
 $color__background: darken($color__white, 1%);
+$color__icons: $color__secondary;
 $color__accent: $color__secondary;
 $color__woo-accent: $color__accent;
 
@@ -35,6 +37,7 @@ $size__padding-resp: 20px;
 // HEADER
 $size__branding-height: 60px;
 $size__nav-height: 120px;
+$size__navresponsive-nav-line-height: 3;
 $size__logo-height: 100%;
 $size__responsive-menu-width: 360px;
 
