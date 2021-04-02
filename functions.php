@@ -2,8 +2,8 @@
 
 $modul_r_defaults = array(
 	'colors' => array(
-		'primary' => '#E53D00',
-		'secondary' => '#685876',
+		'primary' => '#17bebb',
+		'secondary' => '#33658A',
 		'white' => '#ffffff',
 		'white-smoke' => '#f7f7f7',
 		'gray-light' => '#e3e3e3',
@@ -15,11 +15,11 @@ $modul_r_defaults = array(
 		'background' => 'white-smoke',
 		'title-color' => 'black',
 		'text-color' => 'black',
-		'header-color' => 'white',
-		'header-text-color' => 'gray',
-		'footer-color' => 'secondary',
-		'footer-bottom-color' => 'secondary',
-		'footer-text-color' => 'gray',
+		'header-color' => 'gray-dark',
+		'header-text-color' => 'white',
+		'footer-color' => 'gray-light',
+		'footer-bottom-color' => 'primary',
+		'footer-text-color' => 'gray-dark',
 	)
 );
 
