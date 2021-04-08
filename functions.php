@@ -20,7 +20,8 @@ $modul_r_defaults = array(
 		'footer-color' => 'gray-light',
 		'footer-bottom-color' => 'primary',
 		'footer-text-color' => 'gray-dark',
-	)
+	),
+	'social_media_enabled' => array( 'Facebook', 'Instagram', 'Twitter', 'Linkedin', 'YouTube', 'www' )
 );
 
 require_once( get_stylesheet_directory() . '/inc/mimetypes.php' );
