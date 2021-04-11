@@ -13,3 +13,19 @@
 .editor-styles-wrapper {
   li, p {@extend li, p;}
 }
+
+// set the minimum editor block width to xyz because the default was 674px
+/* Main column width */
+.wp-block {
+  max-width: $size__site-width - ($size__side-padding * 2);
+}
+
+/* Width of "wide" blocks */
+.wp-block[data-align="wide"] {
+  max-width: $size__site-width;
+}
+
+/* Width of "full-wide" blocks */
+.wp-block[data-align="full"] {
+  max-width: none;
+}
