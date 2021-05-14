@@ -14,14 +14,14 @@ html {
 body {
   box-sizing: border-box;
   min-height: 100%;
-  font-family: "Montserrat", sans-serif, sans-serif;
-  color: #5c6069;
-  font-size: 17px;
-  line-height: 1.7;
+  font-family: "Comfortaa", sans-serif, sans-serif;
+  color: #5e5e5e;
+  font-size: 16px;
+  line-height: 1.75;
   word-break: break-word; }
   @media (max-width: 500px) {
     body {
-      font-size: 15px; } }
+      font-size: 14px; } }
 
 .has-primary-background-color,
 .has-primary-light-background-color,
@@ -37,7 +37,7 @@ body {
 .has-white-background-color,
 .has-white-smoke-background-color,
 .has-gray-light-background-color {
-  color: #5c6069; }
+  color: #5e5e5e; }
 
 /* Headlines */
 h1,
@@ -46,7 +46,7 @@ h3,
 h4,
 h5,
 h6, .wp-block.editor-post-title__block .editor-post-title__input {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Comfortaa", sans-serif;
   font-weight: 300; }
 
 h1,
@@ -91,51 +91,47 @@ h4 {
 
 h5, h6 {
   font-weight: 500;
-  font-size: 17px; }
+  font-size: 16px; }
   @media (max-width: 1260px) {
     h5, h6 {
-      font-size: 15px; } }
+      font-size: 14px; } }
 
 /* Text and lists */
 li, .editor-styles-wrapper li, .editor-styles-wrapper p,
 p,
 .editor-styles-wrapper li,
 .editor-styles-wrapper p {
-  font-family: "Montserrat", sans-serif;
-  font-size: 17px; }
+  font-family: "Comfortaa", sans-serif;
+  font-size: 16px; }
   @media (max-width: 1260px) {
     li, .editor-styles-wrapper li, .editor-styles-wrapper p,
     p,
     .editor-styles-wrapper li,
     .editor-styles-wrapper p {
-      font-size: 16px; } }
+      font-size: 15px; } }
   @media (max-width: 500px) {
     li, .editor-styles-wrapper li, .editor-styles-wrapper p,
     p,
     .editor-styles-wrapper li,
     .editor-styles-wrapper p {
-      font-size: 15px; } }
+      font-size: 14px; } }
 
 
 p,
 .editor-styles-wrapper li,
 .editor-styles-wrapper p {
   margin: 0 0 8px;
-  line-height: 1.7; }
+  line-height: 1.75; }
 
 b, strong, a {
   font-weight: 600; }
 
-p b, .editor-styles-wrapper li b, .editor-styles-wrapper p b {
-  color: #e8bf1b; }
-
 a {
-  color: #2a8e7e;
   text-decoration: none; }
 
 ul, ol, dl {
   margin-top: 32px;
   margin-bottom: 32px; }
   ul li, ul .editor-styles-wrapper li, .editor-styles-wrapper ul li, ul .editor-styles-wrapper p, .editor-styles-wrapper ul p, ul dt, ol li, ol .editor-styles-wrapper li, .editor-styles-wrapper ol li, ol .editor-styles-wrapper p, .editor-styles-wrapper ol p, ol dt, dl li, dl .editor-styles-wrapper li, .editor-styles-wrapper dl li, dl .editor-styles-wrapper p, .editor-styles-wrapper dl p, dl dt {
-    line-height: 1.7;
+    line-height: 1.75;
     margin-bottom: 12px; }

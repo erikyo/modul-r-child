@@ -23,6 +23,9 @@ const notify = require("gulp-notify");
 // Misc/global vars
 const pkg = JSON.parse(fs.readFileSync('./package.json'));
 
+// Use node sass as compiler
+sass.compiler = require('node-sass');
+
 // Task options
 const opts = {
   rootPath: './',
