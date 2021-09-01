@@ -1,8 +1,9 @@
 /* MODUL R CHILD Style */
+@import "utils/vars.scss";
 
+/* MODUL R Style */
 /* Utils */
-@import "../../../../modul-r/assets/src/scss/utils/normalize";
-@import "utils/vars";
+// @import "../../../../modul-r/assets/src/scss/utils/normalize";
 @import "../../../../modul-r/assets/src/scss/utils/media-queries";
 
 /* Base style */
@@ -10,7 +11,7 @@
 // @import "../../../../modul-r/assets/src/scss/main/colors";
 // @import "../../../../modul-r/assets/src/scss/woo/woo-base";
 @import "../../../../modul-r/assets/src/scss/main/fonts";
-@import "../../../../modul-r/assets/src/scss/main/typography";
+//@import "../../../../modul-r/assets/src/scss/main/typography";
 @import "../../../../modul-r/assets/src/scss/main/helpers";
 @import "../../../../modul-r/assets/src/scss/main/table";
 @import "../../../../modul-r/assets/src/scss/main/inputs";
@@ -19,22 +20,18 @@
 
 /* Components */
 // @import "../../../../modul-r/assets/src/scss/components/header";
-// @import "components/header";
 // @import "../../../../modul-r/assets/src/scss/components/navigation";
 @import "../../../../modul-r/assets/src/scss/components/hamburger";
 @import "../../../../modul-r/assets/src/scss/components/sidebar";
-@import "components/content";
 @import "../../../../modul-r/assets/src/scss/components/content";
 @import "../../../../modul-r/assets/src/scss/components/content-header";
 @import "../../../../modul-r/assets/src/scss/components/extras";
 @import "../../../../modul-r/assets/src/scss/components/blocks";
 @import "../../../../modul-r/assets/src/scss/components/footer";
-@import "components/footer";
 @import "../../../../modul-r/assets/src/scss/components/animations";
 @import "../../../../modul-r/assets/src/scss/components/accessibility";
 @import "../../../../modul-r/assets/src/scss/components/comments";
 @import "../../../../modul-r/assets/src/scss/components/search-form";
-@import "components/cookie";
 
 /* Pages */
 // @import "../../../../modul-r/assets/src/scss/pages/homepage";
@@ -58,3 +55,4 @@
 @import "../../../../modul-r/assets/src/scss/main/typography-extras";
 @import "../../../../modul-r/assets/src/scss/main/scrollbar";
 @import "../../../../modul-r/assets/src/scss/utils/print";
+

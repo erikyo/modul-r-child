@@ -1,10 +1,30 @@
-@import "utils/vars";
+/* Main column width */
+.wp-block {
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Width of "wide" blocks */
+.wp-block[data-align="wide"] {
+  max-width: 1080px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Width of "full-wide" blocks */
+.wp-block[data-align="full"] {
+  max-width: none;
+}
+
+@import "../../../../Modul-R/assets/src/scss/utils/vars";
 @import "../../../../Modul-R/assets/src/scss/utils/media-queries";
 
 @import "../../../../Modul-R/assets/src/scss/main/base";
 @import "../../../../Modul-R/assets/src/scss/main/colors";
 @import "../../../../Modul-R/assets/src/scss/main/fonts";
 @import "../../../../Modul-R/assets/src/scss/main/typography";
+@import "../../../../Modul-R/assets/src/scss/main/typography-extras";
 
 .wp-block.editor-post-title__block .editor-post-title__input{
   @extend %headline_style;
@@ -12,20 +32,4 @@
 
 .editor-styles-wrapper {
   li, p {@extend li, p;}
-}
-
-// set the minimum editor block width to xyz because the default was 674px
-/* Main column width */
-.wp-block {
-  max-width: $size__site-width - ($size__side-padding * 2);
-}
-
-/* Width of "wide" blocks */
-.wp-block[data-align="wide"] {
-  max-width: $size__site-width;
-}
-
-/* Width of "full-wide" blocks */
-.wp-block[data-align="full"] {
-  max-width: none;
 }

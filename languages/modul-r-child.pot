@@ -13,10 +13,3 @@ msgstr ""
 "X-Poedit-SourceCharset: UTF-8\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: inc/enqueue-scripts.php:28
-msgid "This website uses cookies to improve user experience, memorizing your preferences and monitorizing site funcionality. Check out our <a href=\"%s\">Cookie Policy</a>"
-msgstr ""
-
-#: inc/enqueue-scripts.php:29
-msgid "Ok, I understand"
-msgstr ""

@@ -1,48 +1,54 @@
 {
   "name": "modul-r-child",
-  "version": "1.2.4",
-  "main": "Codekraft",
+  "version": "1.4.0",
+  "wp_tested": "5.8",
+  "repository": "https://github.com/erikyo/modul-r",
+  "license": "GPL-3.0",
+  "main": "Modul R Child",
+  "description": "Modul R Child Wordpress Theme",
   "author": {
-    "name": "Codekraft Studio - info@codekraft.it",
-    "website": "https://codekraft.it"
+    "name": "Codekraft Studio",
+    "website": "https://codekraft.it/"
   },
   "homepage": "https://modul-r.codekraft.it/",
   "wp": {
-    "themeName": "Modul-R child",
-    "description": "Modul R child template",
     "template": "modul-r",
-    "textDomain": "modul-r-child",
-    "licenseURI": "https://github.com/erikyo/modular-wordpress-theme/blob/master/LICENSE"
+    "themeName": "Modul-R Child",
+    "description": "Modul R Child is the child template of modul-r. you can find the original template here https://github.com/erikyo/modul-r/",
+    "textDomain": "modul-r",
+    "tags": "blog, e-commerce, portfolio, one-column, two-columns, grid-layout, custom-background, custom-header, custom-logo, custom-menu, custom-colors, editor-style, microformats, flexible-header, footer-widgets, featured-images, featured-image-header, full-width-template, block-styles, theme-options, wide-blocks, sticky-post, threaded-comments, translation-ready",
+    "licenseURI": "https://github.com/erikyo/modul-r/blob/master/LICENSE"
   },
   "scripts": {
     "watch": "node node_modules/gulp/bin/gulp watch",
     "build": "node node_modules/gulp/bin/gulp build",
     "postinstall": "node node_modules/gulp/bin/gulp build"
   },
-  "license": "GPL-3.0",
   "style": "./style.css",
   "devDependencies": {
-    "@babel/core": "^7.13.13",
-    "@babel/preset-env": "^7.13.12",
-    "autoprefixer": "^9.7.5",
-    "cssnano": "^4.1.10",
+    "@babel/core": "^7.15.0",
+    "@babel/preset-env": "^7.15.0",
+    "autoprefixer": "9.8.6",
+    "cssnano": "4.1.10",
     "del": "^6.0.0",
     "gulp": "^4.0.2",
     "gulp-babel": "^8.0.0",
     "gulp-concat": "^2.6.1",
     "gulp-header": "^2.0.9",
+    "gulp-if": "^3.0.0",
     "gulp-imagemin": "^7.1.0",
     "gulp-newer": "^1.4.0",
     "gulp-notify": "^3.2.0",
-    "gulp-postcss": "^9.0.0",
+    "gulp-postcss": "9.0.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^5.0.0",
     "gulp-sourcemaps": "^3.0.0",
     "gulp-uglify": "^3.0.2",
     "gulp-watch": "^5.0.1",
     "gulp-wp-pot": "^2.5.0",
     "gulp-zip": "^5.1.0",
-    "postcss": "^8.2.8"
-  },
-  "dependencies": {
-    "gulp-sass": "^4.1.0"
+    "imagemin-webp": "^6.0.0",
+    "postcss": "8.0.0",
+    "sass": "^1.38.0"
   }
 }

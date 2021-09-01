@@ -1,45 +1,48 @@
+/* MODUL R CHILD Style */
+
+@import "utils/vars.scss";
+
+
 /* MODUL R Style */
 
 /* Utils */
-// @import "../../../../Modul-R/assets/src/scss/utils/normalize";
-@import "utils/vars";
-@import "../../../../Modul-R/assets/src/scss/utils/media-queries";
+@import "../../../../modul-r/assets/src/scss/utils/normalize";
+@import "../../../../modul-r/assets/src/scss/utils/vars";
+@import "../../../../modul-r/assets/src/scss/utils/media-queries";
 
 /* Base style */
-@import "../../../../Modul-R/assets/src/scss/main/base";
-@import "../../../../Modul-R/assets/src/scss/main/colors";
+@import "../../../../modul-r/assets/src/scss/main/base";
+@import "../../../../modul-r/assets/src/scss/main/colors";
 @import "../../../../modul-r/assets/src/scss/woo/woo-base";
-// @import "../../../../Modul-R/assets/src/scss/main/fonts";
-// @import "../../../../Modul-R/assets/src/scss/main/typography";
-// @import "../../../../Modul-R/assets/src/scss/main/helpers";
-// @import "../../../../Modul-R/assets/src/scss/main/inputs";
-// @import "../../../../Modul-R/assets/src/scss/main/images";
-// @import "../../../../Modul-R/assets/src/scss/main/buttons";
+// @import "../../../../modul-r/assets/src/scss/main/fonts";
+@import "../../../../modul-r/assets/src/scss/main/typography";
+// @import "../../../../modul-r/assets/src/scss/main/helpers";
+// @import "../../../../modul-r/assets/src/scss/main/table";
+// @import "../../../../modul-r/assets/src/scss/main/inputs";
+// @import "../../../../modul-r/assets/src/scss/main/images";
+// @import "../../../../modul-r/assets/src/scss/main/buttons";
 
 /* Components */
-@import "../../../../Modul-R/assets/src/scss/components/header";
-@import "components/header";
-@import "../../../../Modul-R/assets/src/scss/components/navigation";
-// @import "../../../../Modul-R/assets/src/scss/components/hamburger";
-// @import "../../../../Modul-R/assets/src/scss/components/sidebar";
-@import "../../../../Modul-R/assets/src/scss/components/content";
+@import "../../../../modul-r/assets/src/scss/components/header";
+@import "../../../../modul-r/assets/src/scss/components/navigation";
+// @import "../../../../modul-r/assets/src/scss/components/hamburger";
+// @import "../../../../modul-r/assets/src/scss/components/sidebar";
+@import "../../../../modul-r/assets/src/scss/components/content";
 // @import "../../../../modul-r/assets/src/scss/components/content-header";
-// @import "../../../../Modul-R/assets/src/scss/components/extras";
-// @import "../../../../Modul-R/assets/src/scss/components/blocks";
-// @import "../../../../Modul-R/assets/src/scss/components/footer";
-// @import "../../../../Modul-R/assets/src/scss/components/animations";
-// @import "../../../../Modul-R/assets/src/scss/components/accessibility";
-// @import "../../../../Modul-R/assets/src/scss/components/comments";
-// @import "../../../../Modul-R/assets/src/scss/components/search-form";
-// @import "components/cookie";
+// @import "../../../../modul-r/assets/src/scss/components/extras";
+// @import "../../../../modul-r/assets/src/scss/components/blocks";
+// @import "../../../../modul-r/assets/src/scss/components/footer";
+// @import "../../../../modul-r/assets/src/scss/components/animations";
+// @import "../../../../modul-r/assets/src/scss/components/accessibility";
+// @import "../../../../modul-r/assets/src/scss/components/comments";
+// @import "../../../../modul-r/assets/src/scss/components/search-form";
 
 /* Pages */
-@import "../../../../Modul-R/assets/src/scss/pages/homepage";
-@import "pages/homepage";
-// @import "../../../../Modul-R/assets/src/scss/pages/page";
-// @import "../../../../Modul-R/assets/src/scss/pages/single";
-// @import "../../../../Modul-R/assets/src/scss/pages/archive";
-// @import "../../../../Modul-R/assets/src/scss/pages/author";
+@import "../../../../modul-r/assets/src/scss/pages/homepage";
+// @import "../../../../modul-r/assets/src/scss/pages/page";
+// @import "../../../../modul-r/assets/src/scss/pages/single";
+// @import "../../../../modul-r/assets/src/scss/pages/author";
+// @import "../../../../modul-r/assets/src/scss/pages/archive";
 
 /* WooCommerce */
 // @import "../../../../modul-r/assets/src/scss/woo/woo-common";
@@ -47,12 +50,12 @@
 // @import "../../../../modul-r/assets/src/scss/woo/woo-sidebar";
 
 /* Vendor Style */
-// @import "../../../../Modul-R/assets/src/scss/vendor/fancybox";
-// @import "../../../../Modul-R/assets/src/scss/vendor/slick";
-// @import "../../../../Modul-R/assets/src/scss/vendor/masonry";
+// @import "../../../../modul-r/assets/src/scss/vendor/fancybox";
+// @import "../../../../modul-r/assets/src/scss/vendor/slick";
+// @import "../../../../modul-r/assets/src/scss/vendor/masonry";
 
 /* Icons & extras */
-// @import "../../../../Modul-R/assets/src/scss/utils/icons";
-// @import "../../../../Modul-R/assets/src/scss/main/typography-extras";
-// @import "../../../../Modul-R/assets/src/scss/main/scrollbar";
-// @import "../../../../Modul-R/assets/src/scss/utils/print";
+// @import "../../../../modul-r/assets/src/scss/utils/icons";
+// @import "../../../../modul-r/assets/src/scss/main/typography-extras";
+// @import "../../../../modul-r/assets/src/scss/main/scrollbar";
+// @import "../../../../modul-r/assets/src/scss/utils/print";
