@@ -67,7 +67,7 @@ $modul_r_defaults = array(
             array( 'name' => 'font-size--xxxl', 'default' => 56, 'input' => 'number', 'input_type' => 'int', 'unit' => 'px' ),
         ),
         'font_weight' => array(
-            array( 'name' => 'font-weight--bold', 'default' => 600, 'input' => 'select', 'select_type' => 'weights' ),
+            array( 'name' => 'font-weight--title', 'default' => 600, 'input' => 'select', 'select_type' => 'weights' ),
             array( 'name' => 'font-weight--regular', 'default' => 400, 'input' => 'select', 'select_type' => 'weights' ),
             array( 'name' => 'font-weight--light', 'default' => 300, 'input' => 'select', 'select_type' => 'weights' )
         ),
