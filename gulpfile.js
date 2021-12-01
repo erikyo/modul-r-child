@@ -267,7 +267,10 @@ async function mainCSSbuild() {
 
 function backendCSS() {
   return gulp
-    .src(opts.devPath + 'scss/editor.scss')
+    .src([
+      opts.devPath + 'scss/woo.scss',
+      opts.devPath + 'scss/editor.scss'
+    ])
     .pipe(sourcemaps.init())
     .pipe(sass(opts.sass.dev))
     .on('error', notify.onError('Error: <%= error.message %>,title: "SASS Error"'))
