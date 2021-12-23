@@ -68,6 +68,7 @@ h5,
 h6 {
   font-family: var(--typography--title--font-family);
   font-weight: var(--typography--title--font-weight);
+  line-height: var(--typography--line-height);
 }
 
 h1,
@@ -76,12 +77,13 @@ h3,
 h4,
 h5,
 h6 {
-  margin: 0 0 var(--size--margin--);
+  margin-bottom: var(--size--margin--);
   padding: 0;
 }
 
 h1 {
   font-size: var(--typography--font-size--xxxl);
+  margin-top: var(--size--margin-l);
 }
 @media (max-width : 500px) {
   h1 {
@@ -91,6 +93,7 @@ h1 {
 
 h2 {
   font-size: var(--typography--font-size--xxl);
+  margin-top: var(--size--margin-l);
 }
 @media (max-width : 500px) {
   h2 {
@@ -108,6 +111,7 @@ h2 {
 
 h3 {
   font-size: var(--typography--font-size--xl);
+  margin-top: var(--size--margin-m);
 }
 @media (max-width : 767px) {
   h3 {
@@ -165,6 +169,40 @@ ul, ol, dl {
 ul li, ul .editor-styles-wrapper li, .editor-styles-wrapper ul li, ul .editor-styles-wrapper p, .editor-styles-wrapper ul p, ul dt, ul dd, ol li, ol .editor-styles-wrapper li, .editor-styles-wrapper ol li, ol .editor-styles-wrapper p, .editor-styles-wrapper ol p, ol dt, ol dd, dl li, dl .editor-styles-wrapper li, .editor-styles-wrapper dl li, dl .editor-styles-wrapper p, .editor-styles-wrapper dl p, dl dt, dl dd {
   line-height: var(--typography--line-height);
   margin: 0;
+}
+
+.entry-content {
+  /* Typography styles */
+}
+.entry-content .wp-block-gallery + h1, .entry-content .wp-block-gallery + h2, .entry-content .wp-block-gallery + h3,
+.entry-content p + h1,
+.entry-content .editor-styles-wrapper li + h1,
+.editor-styles-wrapper .entry-content li + h1,
+.entry-content .editor-styles-wrapper p + h1,
+.entry-content p + h2,
+.entry-content .editor-styles-wrapper li + h2,
+.editor-styles-wrapper .entry-content li + h2,
+.entry-content .editor-styles-wrapper p + h2,
+.entry-content p + h3,
+.entry-content .editor-styles-wrapper li + h3,
+.editor-styles-wrapper .entry-content li + h3,
+.entry-content .editor-styles-wrapper p + h3 {
+  margin-top: var(--size--margin-xl);
+}
+.entry-content a {
+  font-weight: var(--typography--title--font-weight);
+}
+.entry-content ul, .entry-content ol, .entry-content dl {
+  padding: 0 var(--size--margin-s);
+  list-style-position: inside;
+}
+.entry-content ul li, .entry-content ul .editor-styles-wrapper p, .editor-styles-wrapper .entry-content ul p, .entry-content ul dt, .entry-content ol li, .entry-content ol .editor-styles-wrapper p, .editor-styles-wrapper .entry-content ol p, .entry-content ol dt, .entry-content dl li, .entry-content dl .editor-styles-wrapper p, .editor-styles-wrapper .entry-content dl p, .entry-content dl dt {
+  line-height: var(--typography--line-height--wide);
+  padding-left: var(--size--margin--);
+  list-style: inherit;
+}
+.entry-content ul ul, .entry-content ul ol, .entry-content ul dd, .entry-content ol ul, .entry-content ol ol, .entry-content ol dd, .entry-content dl ul, .entry-content dl ol, .entry-content dl dd {
+  padding-left: var(--size--responsive--side-margin);
 }
 
 iframe {

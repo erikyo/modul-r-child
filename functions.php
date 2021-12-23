@@ -44,6 +44,7 @@ $modul_r_defaults = array(
             'Michroma' => array('name'=> 'Michroma', 'weights' => array(400) ),
             'Pacifico' => array('name'=> 'Pacifico', 'weights' => array(400) ),
             'Permanent+Marker' => array('name'=> 'Permanent Marker', 'weights' => array(400) ),
+            'Parisienne' => array('name'=> 'Parisienne', 'weights' => array(400) ),
         ),
         'font_styles' => array(
             "title_font-family" => array( 'name' => 'font-family', 'default' => 'Montserrat', 'input' => 'select', 'type' => 'font_family', 'for' => 'title' ),

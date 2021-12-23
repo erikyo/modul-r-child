@@ -22,14 +22,15 @@ if (document.body.classList.contains('category')) {
       path: '.navigation a', // selector for the NEXT link (to page 2)
       append: '.grid__item', // selector for all items you'll retrieve
       outlayer: msnry,
+      prefill: true,
       history: false,
       status: '.page-load-status',
     });
 
-    infScroll.on('append', function (response, path, items) {
-      imagesLoaded($container, function (instance) {
+    imagesLoaded( $container, function (instance) {
+      infScroll.on('appended', function (response, path, items) {
         msnry.layout()
-      });
+      })
     });
   }
 
