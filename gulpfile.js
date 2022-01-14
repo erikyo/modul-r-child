@@ -268,6 +268,7 @@ async function mainCSSbuild() {
 function backendCSS() {
   return gulp
     .src([
+      opts.devPath + 'scss/late-style.scss',
       opts.devPath + 'scss/woo.scss',
       opts.devPath + 'scss/editor.scss'
     ])

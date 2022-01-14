@@ -1,6 +1,8 @@
 /* MODUL R CHILD Style */
 @import "utils/vars.scss";
 
+
+
 /* MODUL R Style */
 /* Utils */
 // @import "../../../../modul-r/assets/src/scss/utils/normalize";
@@ -27,10 +29,10 @@
 @import "../../../../modul-r/assets/src/scss/components/content-header";
 @import "../../../../modul-r/assets/src/scss/components/extras";
 @import "../../../../modul-r/assets/src/scss/components/blocks";
-@import "../../../../modul-r/assets/src/scss/components/footer";
-@import "../../../../modul-r/assets/src/scss/components/animations";
-@import "../../../../modul-r/assets/src/scss/components/accessibility";
-@import "../../../../modul-r/assets/src/scss/components/comments";
+// @import "../../../../modul-r/assets/src/scss/components/footer";
+// @import "../../../../modul-r/assets/src/scss/components/animations";
+// @import "../../../../modul-r/assets/src/scss/components/accessibility";
+// @import "../../../../modul-r/assets/src/scss/components/comments";
 @import "../../../../modul-r/assets/src/scss/components/search-form";
 
 /* Pages */
@@ -38,18 +40,18 @@
 @import "../../../../modul-r/assets/src/scss/pages/page";
 @import "../../../../modul-r/assets/src/scss/pages/single";
 @import "../../../../modul-r/assets/src/scss/pages/archive";
-@import "../../../../modul-r/assets/src/scss/pages/author";
+// @import "../../../../modul-r/assets/src/scss/pages/author";
 
 
 /* Vendor Style */
-@import "../../../../modul-r/assets/src/scss/vendor/fancybox";
-@import "../../../../modul-r/assets/src/scss/vendor/slick";
+// @import "../../../../modul-r/assets/src/scss/vendor/fancybox";
+// @import "../../../../modul-r/assets/src/scss/vendor/slick";
 @import "../../../../modul-r/assets/src/scss/vendor/masonry";
 
 
 /* Icons & extras */
-@import "../../../../modul-r/assets/src/scss/utils/icons";
+// @import "../../../../modul-r/assets/src/scss/utils/icons";
 @import "../../../../modul-r/assets/src/scss/main/typography-extras";
 @import "../../../../modul-r/assets/src/scss/main/scrollbar";
-@import "../../../../modul-r/assets/src/scss/utils/print";
+// @import "../../../../modul-r/assets/src/scss/utils/print";
 
