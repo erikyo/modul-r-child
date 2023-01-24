@@ -1,0 +1,18 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/theme.json",
+  "version": 2,
+  "settings": {
+    "custom": {
+      "element": {
+        "hamburger": {
+          "color": "var(--header--text-color)"
+        }
+      }
+    }
+  },
+  "styles": {
+    "spacing": {
+      "blockGap": "2rem"
+    }
+  }
+}

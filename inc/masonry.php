@@ -20,10 +20,12 @@ function modul_r_category_query( $query ) {
 // do not alter the query on wp-admin pages and only alter it if it's the main query
 	if (!is_admin() && $query->is_main_query()){
 
-		// alter the query for categories
-		if(is_category()){
-			$query->set('posts_per_page', 3);
-		}
+        // alter the query for categories
+        if(is_category()){
+            $query->set('posts_per_page', 4);
+        } else if(is_home()) {
+            $query->set('posts_per_page', 5);
+        }
 
 	}
 }
