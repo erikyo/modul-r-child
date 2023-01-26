@@ -20,7 +20,7 @@ const addModule = ( fileName, filePath ) => {
 };
 
 /** js scripts */
-const childScripts = addModule( 'scripts.js', 'scripts/' );
+const childScripts = addModule( 'child-scripts.js', 'scripts/' );
 
 /** scss styles */
 const atf = addModule( 'atf', 'styles/' );
