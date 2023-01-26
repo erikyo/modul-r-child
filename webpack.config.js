@@ -10,10 +10,10 @@ const addModule = ( fileName, filePath ) => {
 		...config,
 		name: fileName,
 		entry: {
-      [fileName]: path.resolve( __dirname, "assets/src/" + filePath + fileName ),
+      [fileName]: path.resolve( __dirname, "src/" + filePath + fileName ),
     },
 		output: {
-			path: path.resolve( __dirname, "assets/dist/" + filePath ),
+			path: path.resolve( __dirname, "dist/" + filePath ),
 			filename: fileName,
 		},
 	};

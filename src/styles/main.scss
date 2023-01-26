@@ -1,0 +1,82 @@
+/* MODUL R CHILD Style */
+@import "utils/vars.scss";
+
+/* MODUL R Style */
+/* Utils */
+// @import "../../../modul-r/src/styles/utils/normalize";
+@import "../../../modul-r/src/styles/utils/media-queries";
+
+/* Base style */
+// @import "../../../modul-r/src/styles/main/base";
+// @import "../../../modul-r/src/styles/main/colors";
+// @import "../../../modul-r/src/styles/woo/woo-base";
+@import "../../../modul-r/src/styles/main/fonts";
+//@import "../../../modul-r/src/styles/main/typography";
+@import "../../../modul-r/src/styles/main/helpers";
+@import "../../../modul-r/src/styles/main/table";
+@import "../../../modul-r/src/styles/main/inputs";
+@import "../../../modul-r/src/styles/main/images";
+@import "../../../modul-r/src/styles/main/buttons";
+
+/* Components */
+// @import "../../../modul-r/src/styles/components/header";
+// @import "../../../modul-r/src/styles/components/navigation";
+@import "../../../modul-r/src/styles/components/hamburger";
+@import "../../../modul-r/src/styles/components/sidebar";
+@import "../../../modul-r/src/styles/components/content";
+@import "../../../modul-r/src/styles/components/content-header";
+@import "../../../modul-r/src/styles/components/extras";
+@import "../../../modul-r/src/styles/components/blocks";
+@import "../../../modul-r/src/styles/components/footer";
+@import "../../../modul-r/src/styles/components/animations";
+@import "../../../modul-r/src/styles/components/accessibility";
+@import "../../../modul-r/src/styles/components/comments";
+@import "../../../modul-r/src/styles/components/search-form";
+
+/* Pages */
+// @import "../../../modul-r/src/styles/pages/homepage";
+@import "../../../modul-r/src/styles/pages/page";
+@import "../../../modul-r/src/styles/pages/single";
+@import "../../../modul-r/src/styles/pages/archive";
+@import "../../../modul-r/src/styles/pages/author";
+
+/* WooCommerce */
+@import "../../../modul-r/src/styles/woo/woo-common";
+@import "../../../modul-r/src/styles/woo/woo-pages";
+@import "../../../modul-r/src/styles/woo/woo-sidebar";
+
+/* Vendor Style */
+@import "../../../modul-r/src/styles/vendor/fancybox";
+@import "../../../modul-r/src/styles/vendor/slick";
+@import "../../../modul-r/src/styles/vendor/masonry";
+
+/* Icons & extras */
+@import "../../../modul-r/src/styles/utils/icons";
+@import "../../../modul-r/src/styles/main/typography-extras";
+@import "../../../modul-r/src/styles/main/scrollbar";
+@import "../../../modul-r/src/styles/utils/print";
+
+/* Customizations */
+@import "custom/base";
+@import "custom/search";
+@import "custom/sidebar";
+@import "custom/pages";
+@import "custom/woo";
+@import "custom/woo-cart";
+@import "custom/woo-single";
+@import "custom/woo-archives";
+@import "custom/select2/select2.css";
+
+.woocommerce div.product form.cart .variations {
+	th {
+		background: white !important;
+		text-align: left;
+	}
+	label {
+		text-align: center;
+	}
+}
+
+body.top .main-navigation li a {
+ color: white
+}
